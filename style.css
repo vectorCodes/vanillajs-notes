@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+button {
+  background-color: rgb(111, 153, 250);
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+#btn-ui {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: auto;
+}
+
+.left {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-header {
+  background-color: aqua;
+  padding: 0.5rem;
+}
+.left-header > h3 {
+  font-size: 2rem;
+}
+
+.left > .left-body {
+  flex-grow: 1;
+  background-color: rgb(250, 249, 249);
+}
+.left-body > div {
+  padding: 0.5rem;
+  border-bottom-style: solid;
+  border-color: rgb(176, 176, 176);
+  border-bottom-width: 2px;
+}
+
+.right {
+  flex-grow: 1;
+  background-color: #d3d3d3;
+  padding: 1rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#create-layout {
+  display: none;
+}
+
+#view-layout {
+  display: none;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid rgb(111, 153, 250);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: Inter;
+  width: 100%;
+  border-radius: 5px;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid rgb(111, 153, 250);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: Inter;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+}

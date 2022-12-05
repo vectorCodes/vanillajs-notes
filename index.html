@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="left">
+          <div class="left-header">
+            <h3>Wirte Your Notes</h3>
+          </div>
+          <div class="left-body" id="left-body"></div>
+          <div class="left-footer">
+            <button id="create-btn">Create</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="layout" id="create-layout">
+            <input placeholder="Enter title" id="input-value" />
+            <textarea placeholder="Enter Text" id="textarea-value"></textarea>
+            <div id="btn-ui">
+              <button id="save-notes">Save</button>
+              <button class="btn-red" id="cancel-btn">cancel</button>
+            </div>
+          </div>
+          <div class="layout" id="view-layout">
+            <h1 id="view-title"></h1>
+            <p id="view-text"></p>
+            <button class="btn-red" id="delete-btn">Delete</button>
+          </div>
+          <div class="layout" id="default-layout">
+            <h1>Welcome to Vector Notes</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
